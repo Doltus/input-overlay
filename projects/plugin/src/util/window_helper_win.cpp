@@ -28,6 +28,7 @@ static bool GetWindowTitle(HWND window, string &title)
 
 static bool WindowValid(HWND window)
 {
+    /**
     LONG_PTR styles, ex_styles;
     RECT rect;
     DWORD id;
@@ -46,6 +47,7 @@ static bool WindowValid(HWND window)
         return false;
     if (styles & WS_CHILD)
         return false;
+    */
 
     return true;
 }
